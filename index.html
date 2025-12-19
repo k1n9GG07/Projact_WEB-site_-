@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardener Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo"><img src="images/icons/logo.png" alt=""></a>
+                <nav class="header__nav">
+                    <ul class="nav-links">
+                        <li><a class="nav-link active" href="#" data-section="home">Main Page</a></li>
+                        <li><a class="nav-link" href="#" data-section="categories">Categories</a></li>
+                        <li><a class="nav-link" href="#" data-section="all-products">All products</a></li>
+                        <li><a class="nav-link" href="#" data-section="sales">All sales</a></li>
+
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <button class="icon-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="icon-btn" id="user-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="icon-btn" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count"></span>
+                        <img src="images/icons/bag.svg">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome__text">
+                <h1 class="welcome__title">Amazing Discounts on Garden Products!</h1>
+                <button class="btn">Check out</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="home" class="section active">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tools">Tools & Equipment</button>
+                <button class="filter-btn" data-filter="garden">Garden</button>
+                <button class="filter-btn" data-filter="home">Home</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="tools" data-price="199">
+                    <div class="product-image">
+                        <div class="product-badge">Popular</div>
+                        <img src="images/food-list1.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Tools & Equipment</div>
+                        <div class="product-name">Fertilizer</div>
+                        <div class="product-description">Professional gardening tool set for precise work</div>
+                        <div class="product-price">
+                            <span class="current-price">$199</span>
+                            <span class="old-price">$240</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="1" data-name="Sectours" data-price="199" data-image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="garden" data-price="26">
+                    <div class="product-image">
+                        <div class="product-badge">New</div>
+                        <img src="images/food-list2.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Garden</div>
+                        <div class="product-name">Protective products and septic tankss</div>
+                        <div class="product-description">Complete set for berry picking and care</div>
+                        <div class="product-price">
+                            <span class="current-price">$26</span>
+                            <span class="old-price">$35</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="2" data-name="Collection for berries" data-price="26" data-image="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tools" data-price="9">
+                    <div class="product-image">
+                        <img src="images/food-list3.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Tools & Equipment</div>
+                        <div class="product-name">Planting material	</div>
+                        <div class="product-description">Durable work gloves for protection</div>
+                        <div class="product-price">
+                            <span class="current-price">$9</span>
+                            <span class="old-price">$14</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="3" data-name="Gloves (black)" data-price="9" data-image="https://images.unsplash.com/photo-1595436021102-4e6a6c4d2c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="tools" data-price="155">
+                    <div class="product-image">
+                        <img src="images/food-list4.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Tools</div>
+                        <div class="product-name">Tools and equipment</div>
+                        <div class="product-description">Precision cutting tool for various materials</div>
+                        <div class="product-price">
+                            <span class="current-price">$155</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="4" data-name="Scale-shaped hacksaw" data-price="155" data-image="https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h2 class="contact-title">Contact</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+7 (499) 350-66-04</span>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Address</span>
+                            <span class="contact-value">Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</span>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Socials</span>
+                            <div class="socials-icons">
+                                <i class="fab fa-facebook social-icon"></i>
+                                <i class="fab fa-twitter social-icon"></i>
+                                <i class="fab fa-instagram social-icon"></i>
+                                <i class="fab fa-youtube social-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Working Hours</span>
+                            <span class="contact-value">24 hours a day</span>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <div class="map-input-container">
+                            <input type="text" class="map-input" placeholder="Paste your Google Maps embed URL here" value='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.234834371035!2d37.62107227697385!3d55.72710797331685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9e7e6c9b3b%3A0x8f6c7f6b7a6b5a4!2sDubininskaya%20Ulitsa%2C%2096%2C%20Moscow%2C%20Russia%2C%20115093!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'>
+                            <button class="map-input-btn">Load Map</button>
+                        </div>
+                        
+                        <button class="map-view-btn" id="show-map-input">
+                            <i class="fas fa-map"></i> View larger map
+                        </button>
+                        
+                        <div class="embedded-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.234834371035!2d37.62107227697385!3d55.72710797331685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9e7e6c9b3b%3A0x8f6c7f6b7a6b5a4!2sDubininskaya%20Ulitsa%2C%2096%2C%20Moscow%2C%20Russia%2C%20115093!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="all-products" class="section">
+        <div class="container">
+            <h2 class="section-title">All Products</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-sort="all">All</button>
+                <button class="filter-btn" data-sort="price-low">Price: Low to High</button>
+                <button class="filter-btn" data-sort="price-high">Price: High to Low</button>
+                <button class="filter-btn" data-sort="popular">Popular</button>
+                <button class="filter-btn" data-sort="new">New</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-price="199">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sectours">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Tools & Equipment</div>
+                        <div class="product-name">Sectours</div>
+                        <div class="product-description">Professional gardening tool set</div>
+                        <div class="product-price">
+                            <span class="current-price">$199</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="1" data-name="Sectours" data-price="199" data-image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="26">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Berry Collection">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Garden</div>
+                        <div class="product-name">Collection for berries</div>
+                        <div class="product-description">Complete berry picking set</div>
+                        <div class="product-price">
+                            <span class="current-price">$26</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="2" data-name="Collection for berries" data-price="26" data-image="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="9">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595436021102-4e6a6c4d2c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Gloves">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Tools & Equipment</div>
+                        <div class="product-name">Gloves (black)</div>
+                        <div class="product-description">Durable work gloves</div>
+                        <div class="product-price">
+                            <span class="current-price">$9</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="3" data-name="Gloves (black)" data-price="9" data-image="https://images.unsplash.com/photo-1595436021102-4e6a6c4d2c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="155">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Hacksaw">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Tools</div>
+                        <div class="product-name">Scale-shaped hacksaw</div>
+                        <div class="product-description">Precision cutting tool</div>
+                        <div class="product-price">
+                            <span class="current-price">$155</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="4" data-name="Scale-shaped hacksaw" data-price="155" data-image="https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h2 class="contact-title">Contact</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+7 (499) 350-66-04</span>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Address</span>
+                            <span class="contact-value">Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</span>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Socials</span>
+                            <div class="socials-icons">
+                                <i class="fab fa-facebook social-icon"></i>
+                                <i class="fab fa-twitter social-icon"></i>
+                                <i class="fab fa-instagram social-icon"></i>
+                                <i class="fab fa-youtube social-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Working Hours</span>
+                            <span class="contact-value">24 hours a day</span>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <div class="map-input-container">
+                            <input type="text" class="map-input"  value='iframe src="https://maps.app.goo.gl/hdwBGUbNhEcpeKrf6'>
+                            <button class="map-input-btn">Load Map</button>
+                        </div>
+                        
+                        <button class="map-view-btn" id="show-map-input">
+                            <i class="fas fa-map"></i> View larger map
+                        </button>
+                        
+                        <div class="embedded-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.234834371035!2d37.62107227697385!3d55.72710797331685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9e7e6c9b3b%3A0x8f6c7f6b7a6b5a4!2sDubininskaya%20Ulitsa%2C%2096%2C%20Moscow%2C%20Russia%2C%20115093!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sales" class="section">
+        <div class="container">
+            <h2 class="section-title">All Sales</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-discount="all">All Discounts</button>
+                <button class="filter-btn" data-discount="30">Up to 30% off</button>
+                <button class="filter-btn" data-discount="50">Up to 50% off</button>
+                <button class="filter-btn" data-discount="70">Up to 70% off</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-discount="30">
+                    <div class="product-image">
+                        <div class="product-badge">-30%</div>
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sectours">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Tools & Equipment</div>
+                        <div class="product-name">Sectours</div>
+                        <div class="product-description">Professional gardening tool set</div>
+                        <div class="product-price">
+                            <span class="current-price">$199</span>
+                            <span class="old-price">$340</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="1" data-name="Sectours" data-price="199" data-image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-discount="25">
+                    <div class="product-image">
+                        <div class="product-badge">-25%</div>
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Berry Collection">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Garden</div>
+                        <div class="product-name">Collection for berries</div>
+                        <div class="product-description">Complete berry picking set</div>
+                        <div class="product-price">
+                            <span class="current-price">$26</span>
+                            <span class="old-price">$35</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="2" data-name="Collection for berries" data-price="26" data-image="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h2 class="contact-title">Contact</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+7 (499) 350-66-04</span>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Address</span>
+                            <span class="contact-value">Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</span>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Socials</span>
+                            <div class="socials-icons">
+                                <i class="fab fa-facebook social-icon"></i>
+                                <i class="fab fa-twitter social-icon"></i>
+                                <i class="fab fa-instagram social-icon"></i>
+                                <i class="fab fa-youtube social-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Working Hours</span>
+                            <span class="contact-value">24 hours a day</span>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <div class="map-input-container">
+                            <input type="text" class="map-input" placeholder="Paste your Google Maps embed URL here" value='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.234834371035!2d37.62107227697385!3d55.72710797331685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9e7e6c9b3b%3A0x8f6c7f6b7a6b5a4!2sDubininskaya%20Ulitsa%2C%2096%2C%20Moscow%2C%20Russia%2C%20115093!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'>
+                            <button class="map-input-btn">Load Map</button>
+                        </div>
+                        
+                        <button class="map-view-btn" id="show-map-input">
+                            <i class="fas fa-map"></i> View larger map
+                        </button>
+                        
+                        <div class="embedded-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.234834371035!2d37.62107227697385!3d55.72710797331685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9e7e6c9b3b%3A0x8f6c7f6b7a6b5a4!2sDubininskaya%20Ulitsa%2C%2096%2C%20Moscow%2C%20Russia%2C%20115093!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="section">
+        <div class="container">
+            <h2 class="section-title">Categories</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All Categories</button>
+                <button class="filter-btn" data-category="tools">Tools & Equipment</button>
+                <button class="filter-btn" data-category="garden">Garden</button>
+                <button class="filter-btn" data-category="home">Home</button>
+                <button class="filter-btn" data-category="sports">Sports</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tools">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Category</div>
+                        <div class="product-name">Tools & Equipment</div>
+                        <div class="product-description">Professional tools for all your needs</div>
+                        <button class="add-to-cart-btn view-category-btn" data-category="tools">
+                            <i class="fas fa-eye"></i> View Products
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Garden">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Category</div>
+                        <div class="product-name">Garden</div>
+                        <div class="product-description">Everything for your garden</div>
+                        <button class="add-to-cart-btn view-category-btn" data-category="garden">
+                            <i class="fas fa-eye"></i> View Products
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h2 class="contact-title">Contact</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+7 (499) 350-66-04</span>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Address</span>
+                            <span class="contact-value">Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</span>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Socials</span>
+                            <div class="socials-icons">
+                                <i class="fab fa-facebook social-icon"></i>
+                                <i class="fab fa-twitter social-icon"></i>
+                                <i class="fab fa-instagram social-icon"></i>
+                                <i class="fab fa-youtube social-icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-row">
+                            <span class="contact-label">Working Hours</span>
+                            <span class="contact-value">24 hours a day</span>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <div class="map-input-container">
+                            <input type="text" class="map-input" placeholder="Paste your Google Maps embed URL here" value='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.234834371035!2d37.62107227697385!3d55.72710797331685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9e7e6c9b3b%3A0x8f6c7f6b7a6b5a4!2sDubininskaya%20Ulitsa%2C%2096%2C%20Moscow%2C%20Russia%2C%20115093!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'>
+                            <button class="map-input-btn">Load Map</button>
+                        </div>
+                        
+                        <button class="map-view-btn" id="show-map-input">
+                            <i class="fas fa-map"></i> View larger map
+                        </button>
+                        
+                        <div class="embedded-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.234834371035!2d37.62107227697385!3d55.72710797331685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9e7e6c9b3b%3A0x8f6c7f6b7a6b5a4!2sDubininskaya%20Ulitsa%2C%2096%2C%20Moscow%2C%20Russia%2C%20115093!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3 class="cart-modal-title">Your Cart</h3>
+                <button class="close-cart-btn" id="close-cart-btn">&times;</button>
+            </div>
+            
+            <div class="cart-items" id="cart-items">
+                <div class="cart-empty" id="cart-empty">
+                    <p>Your cart is empty</p>
+                </div>
+            </div>
+            
+            <div class="cart-total">
+                Total: $<span id="cart-total">0</span>
+            </div>
+            
+            <div class="cart-actions">
+                <button class="cart-btn continue-shopping-btn" id="continue-shopping-btn">Continue Shopping</button>
+                <button class="cart-btn checkout-btn" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GARDENER<span>SHOP</span></h3>
+                    <p>Your one-stop shop for all garden tools, equipment, and essentials.</p>
+                    <p>Quality products at affordable prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +7 (499) 350-66-04</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dubininskaya Ulitsa, 96, Moscow, Russia, 115093</p>
+                    <p><i class="fas fa-envelope"></i> info@gardenershop.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#" data-section="home">Main Page</a>
+                    <a href="#" data-section="categories">Categories</a>
+                    <a href="#" data-section="all-products">All Products</a>
+                    <a href="#" data-section="sales">Sales</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Working Hours</h3>
+                    <p>24 hours a day</p>
+                    <p>7 days a week</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 GARDENER SHOP. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let cart = [];
+            let cartTotal = 0;
+            const cartCount = document.querySelector('.cart-count');
+            const cartModal = document.getElementById('cart-modal');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+            const cartEmptyElement = document.getElementById('cart-empty');
+            
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    navLinks.forEach(item => item.classList.remove('active'));
+                    
+                    this.classList.add('active');
+                    
+                    const targetId = this.getAttribute('data-section');
+                    
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    
+                    document.getElementById(targetId).classList.add('active');
+                    
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+            
+            const welcomeBtn = document.querySelector('.welcome .btn');
+            if (welcomeBtn) {
+                welcomeBtn.addEventListener('click', function() {
+                    navLinks.forEach(item => item.classList.remove('active'));
+                    document.querySelector('[data-section="sales"]').classList.add('active');
+                    
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    document.getElementById('sales').classList.add('active');
+                    
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            const footerLinks = document.querySelectorAll('.footer-section a[data-section]');
+            footerLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetSection = this.getAttribute('data-section');
+                    
+                    navLinks.forEach(navLink => {
+                        navLink.classList.remove('active');
+                        if (navLink.getAttribute('data-section') === targetSection) {
+                            navLink.classList.add('active');
+                        }
+                    });
+                    
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                        if (section.id === targetSection) {
+                            section.classList.add('active');
+                        }
+                    });
+                    
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+            
+            const mainPageFilterButtons = document.querySelectorAll('#home .filter-btn');
+            const mainPageProducts = document.querySelectorAll('#home .product-card');
+            
+            mainPageFilterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    mainPageFilterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    mainPageProducts.forEach(product => {
+                        if (filter === 'all' || product.getAttribute('data-category') === filter) {
+                            product.style.display = 'block';
+                        } else {
+                            product.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn:not(.view-category-btn)');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const id = this.getAttribute('data-id');
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    const image = this.getAttribute('data-image');
+                    
+                    const existingItem = cart.find(item => item.id === id);
+                    
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cart.push({
+                            id: id,
+                            name: name,
+                            price: price,
+                            image: image,
+                            quantity: 1
+                        });
+                    }
+                    
+                    updateCart();
+                    
+                    alert(`"${name}" has been added to your cart!`);
+                });
+            });
+            
+            function updateCart() {
+                const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                cartCount.textContent = totalItems;
+                
+                updateCartModal();
+            }
+            
+            function updateCartModal() {
+                cartItemsContainer.innerHTML = '';
+                cartTotal = 0;
+                
+                if (cart.length === 0) {
+                    cartEmptyElement.style.display = 'block';
+                } else {
+                    cartEmptyElement.style.display = 'none';
+                    
+                    cart.forEach(item => {
+                        cartTotal += item.price * item.quantity;
+                        
+                        const cartItemElement = document.createElement('div');
+                        cartItemElement.className = 'cart-item';
+                        cartItemElement.innerHTML = `
+                            <div class="cart-item-image">
+                                <img src="${item.image}" alt="${item.name}">
+                            </div>
+                            <div class="cart-item-details">
+                                <div class="cart-item-name">${item.name}</div>
+                                <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+                                <div class="cart-item-quantity">
+                                    <button class="quantity-btn decrease-btn" data-id="${item.id}">-</button>
+                                    <span class="cart-item-quantity-value">${item.quantity}</span>
+                                    <button class="quantity-btn increase-btn" data-id="${item.id}">+</button>
+                                    <button class="remove-item-btn" data-id="${item.id}">Remove</button>
+                                </div>
+                            </div>
+                        `;
+                        
+                        cartItemsContainer.appendChild(cartItemElement);
+                    });
+                    
+                    document.querySelectorAll('.decrease-btn').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const id = this.getAttribute('data-id');
+                            const item = cart.find(item => item.id === id);
+                            
+                            if (item && item.quantity > 1) {
+                                item.quantity -= 1;
+                                updateCart();
+                            }
+                        });
+                    });
+                    
+                    document.querySelectorAll('.increase-btn').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const id = this.getAttribute('data-id');
+                            const item = cart.find(item => item.id === id);
+                            
+                            if (item) {
+                                item.quantity += 1;
+                                updateCart();
+                            }
+                        });
+                    });
+                    
+                    document.querySelectorAll('.remove-item-btn').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const id = this.getAttribute('data-id');
+                            cart = cart.filter(item => item.id !== id);
+                            updateCart();
+                        });
+                    });
+                }
+                
+                cartTotalElement.textContent = cartTotal.toFixed(2);
+            }
+            
+            const cartBtn = document.getElementById('cart-btn');
+            const closeCartBtn = document.getElementById('close-cart-btn');
+            const continueShoppingBtn = document.getElementById('continue-shopping-btn');
+            const checkoutBtn = document.getElementById('checkout-btn');
+            
+            cartBtn.addEventListener('click', function() {
+                cartModal.classList.add('active');
+                updateCartModal();
+            });
+            
+            closeCartBtn.addEventListener('click', function() {
+                cartModal.classList.remove('active');
+            });
+            
+            continueShoppingBtn.addEventListener('click', function() {
+                cartModal.classList.remove('active');
+            });
+            
+            checkoutBtn.addEventListener('click', function() {
+                if (cart.length === 0) {
+                    alert('Your cart is empty!');
+                    return;
+                }
+                
+                alert(`Thank you for your order! Total: $${cartTotal.toFixed(2)}\n\nThis is a demo. In a real application, you would proceed to checkout.`);
+                cart = [];
+                updateCart();
+                cartModal.classList.remove('active');
+            });
+            
+            cartModal.addEventListener('click', function(e) {
+                if (e.target === cartModal) {
+                    cartModal.classList.remove('active');
+                }
+            });
+            
+            const searchBtn = document.getElementById('search-btn');
+            searchBtn.addEventListener('click', function() {
+                const searchTerm = prompt('Enter product name to search:');
+                if (searchTerm) {
+                    alert(`Searching for: ${searchTerm}\n\nThis is a demo. In a real application, you would filter products based on search.`);
+                }
+            });
+            
+            const userBtn = document.getElementById('user-btn');
+            userBtn.addEventListener('click', function() {
+                alert('User account panel would open here.\n\nThis is a demo feature.');
+            });
+            
+            const viewCategoryButtons = document.querySelectorAll('.view-category-btn');
+            viewCategoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    document.querySelector('[data-section="home"]').classList.add('active');
+                    
+                    sections.forEach(section => section.classList.remove('active'));
+                    document.getElementById('home').classList.add('active');
+                    
+                    mainPageFilterButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        if (btn.getAttribute('data-filter') === category) {
+                            btn.classList.add('active');
+                        }
+                    });
+                    
+                    mainPageProducts.forEach(product => {
+                        if (product.getAttribute('data-category') === category) {
+                            product.style.display = 'block';
+                        } else {
+                            product.style.display = 'none';
+                        }
+                    });
+                    
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+            
+            updateCart();
+        });
+    </script>
+
+</body>
+</html>
